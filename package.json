@@ -1,0 +1,26 @@
+{
+  "name": "blog_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "nodemon backend/index.js",
+    "client": "npm start --prefix frontend",
+    "tailwind": "npm run tailwind-i --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\" \"npm run tailwind\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^7.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
